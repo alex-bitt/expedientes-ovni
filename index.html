@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<title>Archivo Digital de Expedientes OVNI Desclasificados</title>
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<header>
+<nav>
+    <div class="logo">
+        🛸 Expedientes OVNI
+    </div>
+    <div class="banner-nav">
+        <img
+        src="https://www.archives.gov/files/topics/ufo-banner2.gif"
+        alt="Banner OVNI">
+    </div>
+    <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#informacion">Información</a></li>
+        <li><a href="#evaluacion">Evaluación</a></li>
+        <li><a href="#historial">Historial</a></li>
+    </ul>
+
+</nav>
+</header>
+
+<main>
+
+<section class="hero" id="inicio">
+
+    <div class="hero-content">
+        <h1>Archivo Digital de Expedientes OVNI Desclasificados</h1>
+
+        <p>
+            Plataforma de simulación para el análisis y clasificación
+            de reportes relacionados con Fenómenos Aéreos No Identificados.
+        </p>
+
+    </div>
+
+</section>
+
+<section id="informacion">    
+    <section id="archivos">
+    <h2>Casos Históricos Desclasificados</h2>
+
+    <div class="cards">
+
+    <div class="card">
+        
+    <h3>Roswell - 1947</h3>
+    <p>
+    Uno de los casos más discutidos en la
+    historia de los fenómenos aéreos
+    no identificados.
+    </p>
+    </div>
+
+    <div class="card">
+    <h3>Phoenix Lights - 1997</h3>
+    <p>
+    Observación masiva reportada por
+    miles de personas.
+    </p>
+
+</div>
+
+<div class="card">
+<h3>Tic Tac - 2004</h3>
+<p>
+Caso documentado por pilotos
+militares estadounidenses.
+</p>
+</div>
+</div>
+
+</section>
+    <h2>Centro de Investigación</h2>
+    <div class="cards">
+
+        <div class="card">
+            <h3>📁 Expedientes</h3>
+            <p>
+                Los reportes son almacenados y clasificados según
+                criterios de confiabilidad establecidos.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>📡 Radar</h3>
+            <p>
+                La detección mediante radar incrementa
+                significativamente la credibilidad.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🎥 Evidencia Visual</h3>
+            <p>
+                Videos e imágenes permiten un análisis
+                más detallado de cada caso.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="evaluacion">
+
+    <h2>Clasificador de Evidencias OVNI</h2>
+
+    <div class="stats">
+        <div class="stat-box">
+            Expedientes Analizados
+            <span id="contador">0</span>
+        </div>
+    </div>
+
+    <div class="form-container">
+        <div class="expediente">
+            EXPEDIENTE DESCLASIFICADO
+        </div>
+
+        
+
+        <form id="formulario">
+            
+
+            <div class="form-group">
+                <label>Nombre del reporte</label>
+                <input type="text" id="nombre">
+            </div>
+
+            <div class="form-group">
+                <label>Lugar del avistamiento</label>
+                <input type="text" id="lugar">
+            </div>
+
+            <div class="form-group">
+                <label>Cantidad de testigos</label>
+                <input type="number" id="testigos" min="0">
+            </div>
+
+            <div class="form-group">
+                <label>¿Existe video?</label>
+                <select id="video">
+                    <option value="">Seleccione</option>
+                    <option value="si">Sí</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+
+            <div class="form-group" id="contenedorVideo" style="display:none;">
+                <label>Adjuntar video</label>
+                <input
+                    type="file"
+                    id="archivoVideo"
+                    accept="video/*">
+            </div>
+
+            <div class="form-group">
+                <label>¿Existe imagen?</label>
+                <select id="imagen">
+                    <option value="">Seleccione</option>
+                    <option value="si">Sí</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+            <div class="form-group" id="contenedorImagen" style="display:none;">
+                <label>Adjuntar imagen</label>
+                <input
+                    type="file"
+                    id="archivoImagen"
+                    accept="image/*">
+            </div>
+
+            <div class="form-group">
+                <label>¿Fue detectado por radar?</label>
+                <select id="radar">
+                    <option value="">Seleccione</option>
+                    <option value="si">Sí</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>¿Existe explicación científica probable?</label>
+                <select id="explicacion">
+                    <option value="">Seleccione</option>
+                    <option value="si">Sí</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Descripción breve</label>
+                <textarea id="descripcion" rows="5"></textarea>
+            </div>
+
+            <div class="buttons">
+                <button type="submit" class="btn-evaluar">
+                    Evaluar Evidencia
+                </button>
+
+                <button type="reset" class="btn-reset">
+                    Limpiar
+                </button>
+            </div>
+
+        </form>
+
+        <div class="resultado" id="resultado">
+
+            <h3>Resultado del Análisis</h3>
+
+            <p><strong>Puntaje:</strong> <span id="puntaje"></span></p>
+
+            <p><strong>Clasificación:</strong> <span id="clasificacion"></span></p>
+
+            <p><strong>Recomendación:</strong> <span id="mensaje"></span></p>
+
+            <p><strong>Fecha:</strong> <span id="fecha"></span></p>
+
+            <div class="barra">
+                <div class="progreso" id="progreso"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="historial">
+    <h2>Historial de Evaluaciones</h2>
+    <div class="historial" id="listaHistorial"></div>
+</section>
+</main>
+<footer>
+    <p>Archivo Digital de Expedientes OVNI Desclasificados</p>
+    <p>© 2026  Alejandro Argana Flores Todos los derechos reservados.</p>
+    <p>HTML5 • CSS3 • JavaScript • DOM • Formularios</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

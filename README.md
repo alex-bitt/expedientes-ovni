@@ -112,12 +112,13 @@ proyecto-recuperatorio-ovni/
 2. Abrir el archivo `index.html` en un navegador web.
 3. Completar el formulario de evaluación.
 4. Analizar los resultados generados por el sistema.
-5. gozar 
+5. Datos se almacenan
+6. Gozar
 ---
 
 ## Autor
 
 Alejandro argana flores
-id: 13495967
+ci: 13495967
 
 Proyecto desarrollado para la asignatura Programación Web I.
